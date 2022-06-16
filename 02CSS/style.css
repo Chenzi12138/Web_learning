@@ -1,0 +1,137 @@
+h1,
+h2,
+h4,
+p,
+li {
+    font-family: sans-serif;
+}
+
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: rgba(25, 150, 44, 0.887);
+}
+
+h2 {
+    font-size: 20px;
+    color: rgba(25, 150, 44, 0.887);
+}
+
+h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(25, 150, 44, 0.887);
+}
+
+aside {
+    background-color: #f7f7f7;
+    border: 5px solid #1098ad;
+
+}
+
+/* article header p {
+    font-style: italic;
+} */
+
+#author {
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* footer p {
+    font-size: 12px;
+    text-transform: uppercase;
+} */
+#copyright {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.related_author {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* ul {
+    list-style: none;
+} */
+
+.related {
+    list-style: none;
+}
+
+/* select the first element of a list */
+/* using the persodu selector */
+
+/* 
+    :first-child -> the first child element of its parent container
+ */
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+/* the second child element */
+li:nth-child(2) {
+    color: red;
+}
+
+/* the even-th child element */
+li:nth-child(even) {
+    color: blue;
+}
+
+
+/* hyperlinks */
+
+/* select the true links */
+a:link {
+    color: #1098ad;
+    /* 去除下划线 */
+    text-decoration: none;
+}
+
+/* 选择了所有的a标签，其中也将不是超链接的a标签选择了进来 */
+a {
+    color: red;
+}
+
+
+/* 点击后的link */
+a:visited {
+    color: #1098ad;
+    text-decoration: none;
+}
+
+/* 鼠标悬停 */
+a:hover {
+    color: orange;
+    font-weight: bold;
+    text-decoration: underline orange;
+}
+
+/* 点击 */
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+
+
+
+/* 选择器的优先级 */
+/* 
+    0 -> 通用选择器*
+    1 -> 元素选择器(p,div,li,...)
+    2 -> 类选择器/伪类选择器(. or :)
+    3 -> id选择器(#)
+    4 -> inline选择器(style attribute in HTML)
+    5 -> 标记有!的声明
+ */
+
+
+/* 待看：Box model */
